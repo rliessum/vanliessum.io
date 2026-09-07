@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Light mode overrides when .dark class is removed */
+html:not(.dark) {
+  --color-zinc-950: #fafafa;
+  --color-zinc-100: #18181b;
+  --color-zinc-800: #e4e4e7;
+  --color-zinc-500: #71717a;
+  --color-zinc-400: #52525b;
+}
+
+html:not(.dark) body {
+  background-color: #fafafa;
+  color: #18181b;
+}
+
+html:not(.dark) .border-zinc-800 {
+  border-color: #e4e4e7;
+}
+
+html:not(.dark) .text-zinc-400 {
+  color: #52525b;
+}
+
+html:not(.dark) .text-zinc-500 {
+  color: #71717a;
+}
+
+html:not(.dark) .hover\:bg-zinc-800:hover {
+  background-color: #e4e4e7;
+}
+
+html:not(.dark) .hover\:text-zinc-100:hover {
+  color: #18181b;
+}
+
+html:not(.dark) .hover\:text-zinc-400:hover {
+  color: #52525b;
+}
